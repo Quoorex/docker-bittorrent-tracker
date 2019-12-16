@@ -9,7 +9,7 @@ var config = convict({
     env: "HTTP"
   },
   udp: {
-    doc: "Enable UDF server.",
+    doc: "Enable UDP server.",
     format: Boolean,
     default: true,
     env: "UDP"
