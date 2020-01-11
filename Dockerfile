@@ -1,4 +1,4 @@
-FROM node
+FROM amd64/node
 
 WORKDIR /var/bittorrent-tracker
 COPY . .

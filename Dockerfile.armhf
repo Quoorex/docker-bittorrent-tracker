@@ -1,4 +1,4 @@
-FROM node
+FROM arm32v6/node
 
 WORKDIR /var/bittorrent-tracker
 COPY . .
