@@ -5,6 +5,8 @@ Docker Image for [webtorrent/bittorrent-tracker](https://github.com/webtorrent/b
 ## Supported architectures
 
 - x86-64
+- arm64
+- armhf
 
 ## Usage
 
