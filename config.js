@@ -42,6 +42,6 @@ var config = convict({
 });
 
 // Perform validation
-config.validate({ strict: true });
+config.validate({ allowed: "strict" });
 
 module.exports = config;
