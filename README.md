@@ -2,6 +2,8 @@
 
 Docker Image for [webtorrent/bittorrent-tracker](https://github.com/webtorrent/bittorrent-tracker)
 
+Inspired by [philipphenkel/docker-bittorrent-tracker](https://github.com/philipphenkel/docker-bittorrent-tracker)
+
 ## Supported architectures
 
 - x86-64
@@ -10,15 +12,17 @@ Docker Image for [webtorrent/bittorrent-tracker](https://github.com/webtorrent/b
 
 ## Usage
 
-`docker run --rm -i -t quoorex/bittorrent-tracker:latest`  
-Or run this to expose the port 8100:  
-`docker run --rm -p 8100:8000 -i -t quoorex/bittorrent-tracker:latest`  
+`docker run --rm -i -t quoorex/bittorrent-tracker:latest`
+
+Or run this to expose the port 8100:
+
+`docker run --rm -p 8100:8000 -i -t quoorex/bittorrent-tracker:latest`
 
 ## Configuration
 
-Just pass all configurations as environment variables into the container.  
+Just pass all configurations as environment variables into the container.
 
-Possible values (as listed in [`config.js`](/config.js)):  
+Possible values (as listed in [`config.js`](/config.js)):
 
 - HTTP (Enable HTTP server.): true/false
 - UDP (Enable UDP server.): true/false
@@ -31,12 +35,13 @@ By default all boolean values are true and the torrent whitelist is disabled.
 
 ### Example
 
-Running the bittorrent tracker with stats disabled:  
-`docker run --rm -i -e STATS="false" -t quoorex/bittorrent-tracker:latest`  
+Running the bittorrent tracker with stats disabled:
+
+`docker run --rm -i -e STATS="false" -t quoorex/bittorrent-tracker:latest`
 
 ## docker-compose
 
-```
+```yaml
 services:
   bittorrent-tracker:
     image: quoorex/bittorrent-tracker
