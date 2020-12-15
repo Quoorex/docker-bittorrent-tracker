@@ -1,4 +1,4 @@
-FROM amd64/node
+FROM amd64/node:alpine
 
 WORKDIR /var/bittorrent-tracker
 COPY . .
