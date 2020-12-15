@@ -4,6 +4,8 @@ Docker Image for [webtorrent/bittorrent-tracker](https://github.com/webtorrent/b
 
 Inspired by [philipphenkel/docker-bittorrent-tracker](https://github.com/philipphenkel/docker-bittorrent-tracker)
 
+This repo uses [pnpm](https://github.com/pnpm/pnpm) as a replacement for npm.
+
 ## Supported architectures
 
 - x86-64

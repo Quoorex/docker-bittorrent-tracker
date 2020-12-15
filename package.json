@@ -12,15 +12,6 @@
     "bittorrent-tracker": "^9.15.0",
     "convict": "^6.0.0"
   },
-  "devDependencies": {
-    "magnet-uri": "^5.4.0",
-    "standard": "^16.0.3",
-    "webtorrent-fixtures": "^1.7.3",
-    "wrtc": "^0.4.6"
-  },
-  "engines": {
-    "node": ">=10"
-  },
   "keywords": [
     "bittorrent",
     "p2p",
@@ -32,7 +23,7 @@
     "wire"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "server.js",
   "optionalDependencies": {
     "bufferutil": "^4.0.2",
     "utf-8-validate": "^5.0.3"
