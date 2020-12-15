@@ -8,21 +8,21 @@ var server = new Server({
   http: config.get("http"),
   ws: config.get("websocket"),
   stats: config.get("stats"),
-  filter: function(infoHash, params, cb) {
+  filter: function (infoHash, params, cb) {
     var whitelist = config.get("torrentWhitelist");
     cb(filter.isTorrentAllowed(infoHash, whitelist));
   }
 });
 
-server.on("error", function(err) {
+server.on("error", function (err) {
   console.error("error: " + err.message);
 });
 
-server.on("warning", function(err) {
+server.on("warning", function (err) {
   console.warn("warning: " + err.message);
 });
 
-server.listen(8000, function() {
+server.listen(8000, function () {
   if (server.http) {
     console.log("HTTP tracker listening on port " + server.http.address().port);
   }
