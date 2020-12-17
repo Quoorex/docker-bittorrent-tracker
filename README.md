@@ -14,7 +14,16 @@ This repo uses [pnpm](https://github.com/pnpm/pnpm) as a replacement for npm.
 
 ## Usage
 
-`docker run --rm -i -t quoorex/bittorrent-tracker:latest`
+`docker run --rm -p 8000:8000 -i -t quoorex/bittorrent-tracker:latest`
+
+This exposes the tracker at:  
+
+http://your_ip:8000  
+udp://your_ip:8000  
+ws://your_ip:8000  
+
+depending on your configuration.   
+(Note: the websocket protocol is only useful when you are using Webtorrent)
 
 Or run this to expose the port 8100:
 
