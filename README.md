@@ -1,5 +1,7 @@
 # Docker-Bittorrent-Tracker
 
+## The software probably doesn't work right now. Feel free to try but expect no results. (related issue: [#4](/../../issues/4))
+
 Docker Image for [webtorrent/bittorrent-tracker](https://github.com/webtorrent/bittorrent-tracker)
 
 Inspired by [philipphenkel/docker-bittorrent-tracker](https://github.com/philipphenkel/docker-bittorrent-tracker)
