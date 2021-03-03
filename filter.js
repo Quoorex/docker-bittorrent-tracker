@@ -1,4 +1,4 @@
-exports.isTorrentAllowed = function (infoHash, whitelist, cb) {
+exports.isTorrentAllowed = function (infoHash, whitelist) {
   if (!whitelist || whitelist.length == 0) {
     // No whitelist configured.
     return null;
