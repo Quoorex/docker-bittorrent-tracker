@@ -1,5 +1,7 @@
 # Docker-Bittorrent-Tracker
 
+## The software probably doesn't work right now. Feel free to try but expect no results. (related issue: [#4](/../../issues/4))
+
 Docker Image for [webtorrent/bittorrent-tracker](https://github.com/webtorrent/bittorrent-tracker)
 
 Inspired by [philipphenkel/docker-bittorrent-tracker](https://github.com/philipphenkel/docker-bittorrent-tracker)
@@ -14,7 +16,16 @@ This repo uses [pnpm](https://github.com/pnpm/pnpm) as a replacement for npm.
 
 ## Usage
 
-`docker run --rm -i -t quoorex/bittorrent-tracker:latest`
+`docker run --rm -p 8000:8000 -i -t quoorex/bittorrent-tracker:latest`
+
+This exposes the tracker at:  
+
+http://your_ip:8000  
+udp://your_ip:8000  
+ws://your_ip:8000  
+
+depending on your configuration.   
+(Note: the websocket protocol is only useful when you are using Webtorrent)
 
 Or run this to expose the port 8100:
 
