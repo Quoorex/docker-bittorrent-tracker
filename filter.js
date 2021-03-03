@@ -1,9 +1,11 @@
-exports.isTorrentAllowed = function(infoHash, whitelist) {
+exports.isTorrentAllowed = function (infoHash, whitelist, cb) {
   if (!whitelist || whitelist.length == 0) {
-    return true;
+    // No whitelist configured.
+    return null;
   } else if (~whitelist.indexOf(infoHash)) {
-    return true;
+    // Torrent is whitelisted.
+    return null;
   } else {
-    return false;
+    return new Error("disallowed torrent");
   }
 };
