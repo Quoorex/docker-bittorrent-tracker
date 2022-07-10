@@ -9,8 +9,8 @@
     "url": "https://github.com/Quoorex/docker-bittorrent-tracker/issues"
   },
   "dependencies": {
-    "bittorrent-tracker": "^9.16.1",
-    "convict": "^6.0.0"
+    "bittorrent-tracker": "^9.19.0",
+    "convict": "^6.2.3"
   },
   "keywords": [
     "bittorrent",

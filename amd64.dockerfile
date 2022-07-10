@@ -2,9 +2,8 @@ FROM amd64/node:alpine
 
 WORKDIR /var/bittorrent-tracker
 COPY . .
-RUN npm i -g pnpm
-RUN pnpm install
+RUN npm ci
 
 EXPOSE 8000
 
-CMD ["pnpm", "start"]
+CMD ["npm", "run", "start"]
