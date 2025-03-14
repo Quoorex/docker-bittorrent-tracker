@@ -24,7 +24,7 @@ var config = convict({
     doc:
       "List of allowed info hashes. If this option is omitted, all torrents are allowed.",
     format: Array,
-    default: [],
+    default: true,
     env: "TORRENT_WHITELIST"
   },
   stats: {
